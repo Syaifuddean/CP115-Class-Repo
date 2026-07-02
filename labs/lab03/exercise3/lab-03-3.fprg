@@ -4,12 +4,27 @@
         <attribute name="name" value="lab-03-3"/>
         <attribute name="authors" value="User"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-07-02 03:06:31 PM"/>
+        <attribute name="saved" value="2026-07-02 03:32:02 PM"/>
         <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wMjswMzowNjowMCBQTTsyNzQz"/>
-        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wMjswMzowNjozMSBQTTsxOzI4NTU="/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wMjswMzozMjowMiBQTTsyOzI4NTM="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
-        <body/>
+        <body>
+            <declare name="kilobyte" type="Real" array="False" size=""/>
+            <input variable="kilobyte"/>
+            <declare name="megabyte" type="Real" array="False" size=""/>
+            <declare name="gigabyte" type="Real" array="False" size=""/>
+            <declare name="terabyte" type="Real" array="False" size=""/>
+            <declare name="petabyte" type="Real" array="False" size=""/>
+            <assign variable="megabyte" expression="kilobyte * 0.008"/>
+            <assign variable="gigabyte" expression="kilobyte * 125000"/>
+            <assign variable="terabyte" expression="kilobyte * 0.000000000931323"/>
+            <assign variable="petabyte" expression="kilobyte * 0.00000000000091"/>
+            <output expression="megabyte" newline="True"/>
+            <output expression="gigabyte" newline="True"/>
+            <output expression="terabyte" newline="True"/>
+            <output expression="petabyte" newline="True"/>
+        </body>
     </function>
 </flowgorithm>
