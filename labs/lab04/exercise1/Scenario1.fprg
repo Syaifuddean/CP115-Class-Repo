@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Scenario1"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-07-07 11:22:43 AM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wNzsxMTowNTo1NiBBTTsyNzQy"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wNzsxMToyMjo0MyBBTTsyOzI4NDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="totalKWhConsumed" type="Integer" array="False" size=""/>
+            <input variable="totalKWhConsumed"/>
+            <output expression="" newline="True"/>
+            <declare name="charges" type="Integer" array="False" size=""/>
+            <if expression="totalKWhConsumed &gt;= 200">
+                <then>
+                    <assign variable="charges" expression="0.75"/>
+                </then>
+                <else>
+                    <if expression="totalKWhConsume &lt;= 100">
+                        <then>
+                            <assign variable="charges" expression="0.30"/>
+                        </then>
+                        <else>
+                            <assign variable="charges" expression="0.50"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <declare name="totalElectricityBill" type="Integer" array="False" size=""/>
+            <assign variable="totalElectricityBill" expression="totalKWhConsumed + charges"/>
+            <output expression="totalElectricityBill" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
