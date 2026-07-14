@@ -9,3 +9,4 @@ else:
         charges = 0.5
 totalElectricityBill = totalKWhConsumed + charges
 print(totalElectricityBill)
+gh
