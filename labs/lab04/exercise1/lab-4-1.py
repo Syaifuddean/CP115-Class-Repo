@@ -3,10 +3,9 @@ totalKWhConsumed = int(input())
 if totalKWhConsumed >= 200:
     charges = 0.75
 else:
-    if totalKWhConsume <= 100:
+    if totalKWhConsumed <= 100:
         charges = 0.3
     else:
         charges = 0.5
 totalElectricityBill = totalKWhConsumed + charges
 print(totalElectricityBill)
-gh
