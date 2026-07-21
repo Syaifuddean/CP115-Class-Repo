@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="lab-test-1"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-07-21 10:14:44 AM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0yMTswOTo0OToxNiBBTTsyNzQ5"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0yMTsxMDoxNDo0NCBBTTsxOzI4NDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="weight" type="Real" array="False" size=""/>
+            <input variable="weight"/>
+            <declare name="charge" type="Real" array="False" size=""/>
+            <if expression="weight &lt;= 5">
+                <then>
+                    <assign variable="charge" expression="8"/>
+                </then>
+                <else>
+                    <assign variable="charge" expression="(weight - 5) * 6"/>
+                </else>
+            </if>
+            <declare name="totalCharge" type="Real" array="False" size=""/>
+            <if expression="charge &gt; 60">
+                <then>
+                    <assign variable="totalCharge" expression="charge + 10"/>
+                </then>
+                <else>
+                    <assign variable="totalCharge" expression="charge"/>
+                </else>
+            </if>
+            <output expression="weight" newline="True"/>
+            <output expression="totalCharge" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
