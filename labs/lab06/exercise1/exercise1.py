@@ -11,8 +11,7 @@ total= subtotal+tax
 
 print(
     f"==========\tRECEIPT\t==========",
-    f"Item\t\t\tPrice\tQty\tTotal",
-    f"\nCofee\t\t\t$3.50\t2\t$",total_coffee,"\nMuffin\t\t\t$2.10\t3\t$",total_muffin,"\nwater\t\t\t$1.05\t4\t$total_water",
-    f"\n---------------------------------",
+    f"\nItem\t\t\tPrice\tQty\tTotal",
+    f"\nCofee\t\t\t$3.50\t2\t$",total_coffee,"\nMuffin\t\t\t$2.10\t3\t$",total_muffin,"\nwater\t\t\t$1.05\t4\t$",total_water,"\n---------------------------------",
     f"\nSubtotal\t\t",subtotal,"\ntax (6%)\t\t",tax,"\nTotal:\t\t\t",total,
   )
