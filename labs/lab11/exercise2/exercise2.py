@@ -3,8 +3,11 @@ score = int(input())
 total_a = 0
 total_b = 0
 winner = 0
+i = 0
 
-while score != -1
+while score != -1:
+    i % 2 
+    
    
 
 
