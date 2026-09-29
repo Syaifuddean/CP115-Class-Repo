@@ -1,5 +1,11 @@
 score = int(input())
 
+total_a = 0
+total_b = 0
+winner = 0
+
+while score != -1
+   
 
 
 print(total_a)
